@@ -15,6 +15,8 @@ import Ai from "../assets/skill/Ai.png";
 import Xd from "../assets/skill/Xd.png";
 import C from "../assets/skill/C.png";
 import C_plus from "../assets/skill/C++.png";
+import TS from "../assets/skill/typescript.png";
+import GQ from "../assets/skill/graphql.png";
 
 export const Home = {
   name: "SHRIJAN BAJRACHARYA",
@@ -76,6 +78,21 @@ export const skillList = [
     title: "React",
     image: React,
     color: "#61DAFB",
+  },
+  {
+    title: "Typescript",
+    image: TS,
+    color: "#007ACC",
+  },
+  {
+    title: "React Native",
+    image: React,
+    color: "#61DAFB",
+  },
+  {
+    title: "GraphQL",
+    image: GQ,
+    color: "#E535AB",
   },
   {
     title: "Python",

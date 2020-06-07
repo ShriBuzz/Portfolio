@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Typography } from "@material-ui/core";
+import { Box, Typography, CircularProgress } from "@material-ui/core";
 
 import * as H from "./styles";
 import { Home } from "../../const";
@@ -8,13 +8,14 @@ import ProfileCard from "../../components/ProfileCard";
 import RecButton from "../../components/RecButton";
 
 const HomeSection = ({ userData }) => {
-  if (!userData) {
-    return null;
-  }
   return (
     <Box component="div" style={H.section}>
       <Box component="div" style={H.cardContainer}>
-        <ProfileCard name={userData.name} url={userData.avatar_url} />
+        {!userData ? (
+          <CircularProgress />
+        ) : (
+          <ProfileCard name={userData.name} url={userData.avatar_url} />
+        )}
       </Box>
       <Box component="div" style={H.infoContainer}>
         <Box style={H.textBox}>

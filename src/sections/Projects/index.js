@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { Box, Typography } from "@material-ui/core";
+import { Box, Typography, CircularProgress } from "@material-ui/core";
 
 import * as P from "./styles";
 import ProjectList from "../../components/ProjectList";
@@ -45,7 +45,9 @@ const Projects = () => {
         <Typography variant="h3" style={P.header}>
           PROJECTS
         </Typography>
-        {loading ? null : (
+        {loading ? (
+          <CircularProgress />
+        ) : (
           <Box style={P.listContainer}>
             <Box style={P.listColumn}>
               {oddList.map((data) => {
