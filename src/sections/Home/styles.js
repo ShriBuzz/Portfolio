@@ -1,5 +1,6 @@
 export const section = {
   height: "100vh",
+  minWidth: "755px",
   display: "flex",
   flexDirection: "row",
 };

@@ -1,24 +1,24 @@
 export const section = {
   minheight: "100vh",
-  minWidth: "755px",
+  // minWidth: "755px",
   display: "flex",
-  paddingBottom: 20,
-  backgroundColor: "#098A8A",
 };
 
 export const container = {
   minWidth: "755px",
   flex: 1,
+  paddingTop: 80,
+  paddingBottom: 80,
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
+  backgroundColor: "#098A8A",
 };
 
 export const header = {
   fontSize: 38,
   fontWeight: "800",
   color: "#fff",
-  marginTop: 150,
   marginBottom: 60,
 };
 

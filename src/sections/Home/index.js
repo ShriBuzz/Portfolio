@@ -19,10 +19,12 @@ const HomeSection = ({ userData }) => {
       </Box>
       <Box component="div" style={H.infoContainer}>
         <Box style={H.textBox}>
-          <Typography variant="h4" style={{ marginBottom: 7 }}>
+          <Typography style={{ fontSize: "2em", marginBottom: 7 }}>
             {Home.introHeader}
           </Typography>
-          <Typography style={{ width: 320 }}>{Home.introDesc}</Typography>
+          <Typography style={{ fontSize: "1em", width: 290 }}>
+            {Home.introDesc}
+          </Typography>
         </Box>
         <Box style={H.buttonBox}>
           <RecButton

@@ -2,18 +2,18 @@ import React from "react";
 
 import { Button } from "@material-ui/core";
 
-import * as B from "./styles";
+import "./styles.css";
 
 const RecButton = ({ title, link, image, color }) => {
   return (
     <Button
       variant="contained"
-      style={B.container}
+      className={`container`}
       onClick={() => {
         window.open(link);
       }}
     >
-      <img alt="facebook" src={image} style={B.icon} />
+      <img alt="facebook" src={image} className={`icon`} />
       <p style={{ color: color }}>{title}</p>
     </Button>
   );

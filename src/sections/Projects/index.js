@@ -6,7 +6,7 @@ import * as P from "./styles";
 import ProjectList from "../../components/ProjectList";
 
 const Projects = () => {
-  const [repo, setRepo] = useState();
+  const [repo, setRepo] = useState([]);
   const [loading, setLoading] = useState(true);
   const oddList = [];
   const evenList = [];
@@ -46,7 +46,7 @@ const Projects = () => {
           PROJECTS
         </Typography>
         {loading ? (
-          <CircularProgress />
+          <CircularProgress color="secondary" />
         ) : (
           <Box style={P.listContainer}>
             <Box style={P.listColumn}>

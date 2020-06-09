@@ -8,10 +8,12 @@ import ScrollCards from "../../components/ScrollCards";
 const Skills = () => {
   return (
     <Box component="div" style={S.section}>
-      <Typography variant="h3" style={S.header}>
-        Skills
-      </Typography>
-      <ScrollCards />
+      <Box component="div" style={S.container}>
+        <Typography variant="h3" style={S.header}>
+          SKILLS
+        </Typography>
+        <ScrollCards />
+      </Box>
     </Box>
   );
 };

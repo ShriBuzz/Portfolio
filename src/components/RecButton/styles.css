@@ -1,0 +1,25 @@
+.container {
+  height: 50px;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 35px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 15px;
+}
+
+.container:hover {
+  transition: 0.3s;
+  width: 230px;
+  font-size: 17px;
+  background-color: white !important;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 9px;
+}

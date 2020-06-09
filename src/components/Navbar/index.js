@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-import { AppBar, Link, Box } from "@material-ui/core";
+import { AppBar, Box } from "@material-ui/core";
 
-import * as N from "./styles";
+import "./styles.css";
 
 import Logo from "../../assets/logo.png";
 
@@ -17,60 +17,30 @@ const Navbar = ({ active, setActive, onHome, onSkill, onProject }) => {
   }, []);
 
   return (
-    <AppBar position="fixed" style={position === 0 ? N.nav : N.u_nav}>
-      <img alt="Logo" src={Logo} style={position === 0 ? N.logo : N.u_logo} />
-      <Box component="div" style={position === 0 ? N.list : N.u_list}>
-        <Link
-          style={
-            position === 0
-              ? active === 1
-                ? N.linkActive
-                : N.link
-              : active === 1
-              ? N.u_linkActive
-              : N.u_link
-          }
-          onClick={() => {
-            setActive(1);
-            onHome();
-          }}
+    <AppBar className={`navBar`}>
+      <img alt="Logo" src={Logo} className={`logo`} />
+      <Box component="div" className={`list`}>
+        <a
+          href="#Home"
+          className={active === 1 ? `link active` : `link`}
+          onClick={() => setActive(1)}
         >
           HOME
-        </Link>
-        <Link
-          style={
-            position === 0
-              ? active === 2
-                ? N.linkActive
-                : N.link
-              : active === 2
-              ? N.u_linkActive
-              : N.u_link
-          }
-          onClick={() => {
-            setActive(2);
-            onSkill();
-          }}
+        </a>
+        <a
+          href="#Skill"
+          className={active === 2 ? `link active` : `link`}
+          onClick={() => setActive(2)}
         >
           SKILLS
-        </Link>
-        <Link
-          style={
-            position === 0
-              ? active === 3
-                ? N.linkActive
-                : N.link
-              : active === 3
-              ? N.u_linkActive
-              : N.u_link
-          }
-          onClick={() => {
-            setActive(3);
-            onProject();
-          }}
+        </a>
+        <a
+          href="#Project"
+          className={active === 3 ? `link active` : `link`}
+          onClick={() => setActive(3)}
         >
           PROJECTS
-        </Link>
+        </a>
       </Box>
     </AppBar>
   );
