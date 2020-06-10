@@ -6,7 +6,7 @@ import "./styles.css";
 
 import Logo from "../../assets/logo.png";
 
-const Navbar = ({ active, setActive, onHome, onSkill, onProject }) => {
+const Navbar = ({ active, setActive }) => {
   const [position, setPosition] = useState(0);
 
   useEffect(() => {

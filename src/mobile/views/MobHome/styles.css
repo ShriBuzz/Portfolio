@@ -1,0 +1,25 @@
+.profile {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialsBox {
+  width: 100%;
+  height: 40vh;
+  padding: 10px 0;
+  background-color: #0dadad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}

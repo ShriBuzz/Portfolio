@@ -1,0 +1,22 @@
+.projectBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #098a8a;
+  padding: 20px 0;
+}
+
+.contentBox {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectText {
+  font-size: 38px !important;
+  font-weight: 800 !important;
+  color: white;
+  margin-bottom: 30px !important;
+}

@@ -18,7 +18,7 @@ export const container = {
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  backgroundColor: "rgba(255, 2555, 255, 0.5)",
+  backgroundColor: "rgba(255, 255, 255, 0.5)",
 };
 
 export const header = {

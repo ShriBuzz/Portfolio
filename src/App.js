@@ -1,15 +1,12 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
+import Mobile from "./mobile/views/mainView";
 import Navbar from "./components/Navbar";
 import Home from "./sections/Home";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Fotter from "./sections/Fotter";
-
-const scrollToHome = (ref) => window.scrollTo(0, ref.current.offsetTop);
-const scrollToSkill = (ref) => window.scrollTo(0, ref.current.offsetTop);
-const scrollToProjects = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
 const theme = createMuiTheme({
   palette: {
@@ -20,7 +17,7 @@ const theme = createMuiTheme({
       // contrastText: will be calculated to contrast with palette.primary.main
     },
     secondary: {
-      main: "#A7A7A7",
+      main: "#fff",
       // dark: will be calculated from palette.secondary.main,
     },
   },
@@ -41,6 +38,8 @@ function App() {
 
   useEffect(() => {
     getData();
+    const isMobile = window.innerWidth < 480;
+    console.log(isMobile);
     const onScroll = (e) => {
       setScrollTop(e.target.documentElement.scrollTop);
     };
@@ -56,31 +55,25 @@ function App() {
     }
   }, [scrollTop]);
 
-  const homeRef = useRef(null);
-  const skillRef = useRef(null);
-  const projRef = useRef(null);
-  const ScrollHome = () => scrollToHome(homeRef);
-  const ScrollSkill = () => scrollToSkill(skillRef);
-  const ScrollProject = () => scrollToProjects(projRef);
+  if (window.innerWidth < 480) {
+    return (
+      <ThemeProvider theme={theme}>
+        <Mobile userData={data} active={active} setActive={setActive} />
+      </ThemeProvider>
+    );
+  }
 
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Navbar
-          positon={scrollTop}
-          active={active}
-          setActive={setActive}
-          onHome={ScrollHome}
-          onSkill={ScrollSkill}
-          onProject={ScrollProject}
-        />
-        <div id="Home" ref={homeRef}>
+        <Navbar positon={scrollTop} active={active} setActive={setActive} />
+        <div id="Home">
           <Home userData={data} />
         </div>
-        <div id="Skill" ref={skillRef}>
+        <div id="Skill">
           <Skills />
         </div>
-        <div id="Project" ref={projRef}>
+        <div id="Project">
           <Projects />
         </div>
         <Fotter />

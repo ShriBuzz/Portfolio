@@ -1,0 +1,33 @@
+.Mobcontainer {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  padding: 0;
+  flex-direction: row;
+  /* justify-content: center;
+  align-items: center; */
+  height: 65px;
+}
+
+.Moblink {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15;
+  text-decoration: none;
+  border-right: 1px solid white;
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: "large" !important;
+  background-color: #0dadad;
+}
+
+.Moblink.active {
+  transition: 0.5s;
+  color: white !important;
+  background-color: #098a8a;
+}
