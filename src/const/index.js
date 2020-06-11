@@ -23,6 +23,7 @@ export const Home = {
   description: `Perusing my degree in Computer Engineering at Katmandu 
 Engineering College, TU. Aspiring Front-end developer, 
 striving to learn more everyday.`,
+  intrest: `Web Development | App Development | Front-end | Graphic Design`,
   introHeader: `Hey, I'm Shrijan.`,
   introDesc: `Welcome to my portfolio! Keep scrolling to \n
 checkout my skill set and projects.`,

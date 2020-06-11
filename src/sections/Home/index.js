@@ -25,6 +25,7 @@ const HomeSection = ({ userData }) => {
           <Typography style={{ fontSize: "1em", width: 290 }}>
             {Home.introDesc}
           </Typography>
+          <Typography style={{ fontSize: "1.1em" }}>{Home.intrest}</Typography>
         </Box>
         <Box style={H.buttonBox}>
           <RecButton
