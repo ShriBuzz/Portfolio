@@ -38,8 +38,6 @@ function App() {
 
   useEffect(() => {
     getData();
-    const isMobile = window.innerWidth < 480;
-    console.log(isMobile);
     const onScroll = (e) => {
       setScrollTop(e.target.documentElement.scrollTop);
     };

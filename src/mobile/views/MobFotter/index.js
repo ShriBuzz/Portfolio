@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Link } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 
 import Logo from "../../../assets/logo.png";
 
