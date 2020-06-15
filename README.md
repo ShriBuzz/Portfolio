@@ -1,3 +1,16 @@
+#Portfolio
+
+## Screenshots
+
+### Laptop View
+![1](/screenshots/laptop_view.png)
+### Mobile View
+![2](/screenshots/mobile_view.png)
+
+## Development
+
+React
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
