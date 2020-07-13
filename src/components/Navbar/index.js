@@ -7,7 +7,7 @@ import "./styles.css";
 import Logo from "../../assets/logo.png";
 
 const Navbar = ({ active, setActive }) => {
-  const [setPosition] = useState(0);
+  const [, setPosition] = useState(0);
 
   useEffect(() => {
     const onScroll = (e) => {
