@@ -13,8 +13,8 @@ import React from "../assets/skill/React.png";
 import Python from "../assets/skill/Python.png";
 import Ai from "../assets/skill/Ai.png";
 import Xd from "../assets/skill/Xd.png";
-import C from "../assets/skill/C.png";
-import C_plus from "../assets/skill/C++.png";
+// import C from "../assets/skill/C.png";
+// import C_plus from "../assets/skill/C++.png";
 import TS from "../assets/skill/typescript.png";
 import GQ from "../assets/skill/graphql.png";
 
@@ -110,14 +110,14 @@ export const skillList = [
     image: Xd,
     color: "#FB22BC",
   },
-  {
-    title: "C",
-    image: C,
-    color: "#5B6ABE",
-  },
-  {
-    title: "C++",
-    image: C_plus,
-    color: "#659AD2",
-  },
+  // {
+  //   title: "C",
+  //   image: C,
+  //   color: "#5B6ABE",
+  // },
+  // {
+  //   title: "C++",
+  //   image: C_plus,
+  //   color: "#659AD2",
+  // },
 ];
